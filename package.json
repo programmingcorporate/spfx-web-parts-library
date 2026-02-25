@@ -1,0 +1,44 @@
+{
+  "name": "spfx-web-parts-library",
+  "version": "1.0.0",
+  "description": "A professional SharePoint Framework (SPFx) web parts library",
+  "main": "lib/index.js",
+  "scripts": {
+    "serve": "gulp serve",
+    "build": "gulp bundle",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,scss}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/programmingcorporate/spfx-web-parts-library.git"
+  },
+  "keywords": ["spfx", "sharepoint", "web-parts", "typescript", "pnp"],
+  "author": "Corporate Programming",
+  "license": "MIT",
+  "dependencies": {
+    "@microsoft/sp-core-library": "^1.16.0",
+    "@microsoft/sp-lodash-subset": "^1.16.0",
+    "@microsoft/sp-office-ui-fabric-core": "^1.16.0",
+    "@microsoft/sp-webpart-base": "^1.16.0",
+    "@fluentui/react": "^8.100.0",
+    "@pnp/pnpjs": "^3.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@microsoft/sp-build-web": "^1.16.0",
+    "@types/jest": "^27.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
+    "eslint": "^7.0.0",
+    "gulp": "^4.0.0",
+    "jest": "^27.0.0",
+    "prettier": "^2.0.0",
+    "typescript": "^4.4.0"
+  }
+}
